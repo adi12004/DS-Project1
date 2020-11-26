@@ -10,6 +10,8 @@ public class Main {
         System.out.println("Server is waiting for a connection");
         Socket connection = ss.accept();
         System.out.println("Connection established with client: "+connection);
+        String str = ("Welcome to the game");
+        System.out.println(str);
 
         DataInputStream input = new DataInputStream(new BufferedInputStream(connection.getInputStream()));
         DataOutputStream output = new DataOutputStream(new BufferedOutputStream(connection.getOutputStream()));
